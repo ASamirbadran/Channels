@@ -79,11 +79,13 @@
 		11EF25942428A9F3009F4D02 /* Channels */ = {
 			isa = PBXGroup;
 			children = (
+				11EF25B52428ABD7009F4D02 /* AppDelegate */,
+				11EF25DC2428F89B009F4D02 /* Extension */,
+				11EF25DB2428F87F009F4D02 /* Utilities */,
 				11EF25CF2428B4D3009F4D02 /* Resources */,
 				11EF25CE2428B4A0009F4D02 /* Configuration */,
 				11EF25C72428AFA7009F4D02 /* Base */,
 				11EF25B92428AE5C009F4D02 /* Scence */,
-				11EF25B52428ABD7009F4D02 /* AppDelegate */,
 				11EF25A92428AB94009F4D02 /* Container */,
 			);
 			path = Channels;
@@ -158,10 +160,32 @@
 		11EF25CF2428B4D3009F4D02 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				11EF25DD2428F8A9009F4D02 /* InfoPlists */,
 				11EF259E2428A9F3009F4D02 /* Assets.xcassets */,
-				11EF25A32428A9F3009F4D02 /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		11EF25DB2428F87F009F4D02 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		11EF25DC2428F89B009F4D02 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		11EF25DD2428F8A9009F4D02 /* InfoPlists */ = {
+			isa = PBXGroup;
+			children = (
+				11EF25A32428A9F3009F4D02 /* Info.plist */,
+			);
+			path = InfoPlists;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
