@@ -7,5 +7,7 @@ target 'Channels' do
 
   # Pods for Channels
     pod 'SwiftGen'
+    pod 'Moya'
+
 
 end

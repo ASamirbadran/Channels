@@ -12,6 +12,8 @@ extension PersistenceKeyBase {
     public static let appVersion = PersistenceKey<String?>(key: "appVersion", defaultValue: nil)
     public static let userId = PersistenceKey<Int?>(key: "user_id", defaultValue: nil)
     public static let userName = PersistenceKey<String?>(key: "user_name", defaultValue: nil)
+    public static let userAuthKey = PersistenceKey<String?>(key: "user_auth", defaultValue: nil)
+
 }
 
 open class PersistanceManager: KeyValuePersistence {
@@ -101,6 +103,10 @@ open class PersistanceManager: KeyValuePersistence {
         shared.setValue(value, forKey: PersistenceKeyBase.userName)
     }
     
+    //setting userAuthKey
+    public class func setUserTocken(_ value: String, isLoggedIn: Bool) {
+        shared.setValue(value, forKey: PersistenceKeyBase.userAuthKey)
+    }
     public class func removeUserPref() {
         shared.removeValueForKey(.userId)
         shared.removeValueForKey(.userName)

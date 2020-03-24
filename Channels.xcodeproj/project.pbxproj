@@ -3,12 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		112F4C5F2429F1A000B20258 /* KeyValuePersistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112F4C5E2429F1A000B20258 /* KeyValuePersistence.swift */; };
 		112F4C612429F1AE00B20258 /* PersistanceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112F4C602429F1AE00B20258 /* PersistanceManager.swift */; };
+		112F4C652429F68900B20258 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112F4C642429F68900B20258 /* NetworkManager.swift */; };
+		112F4C672429F69800B20258 /* StaticHeaderPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112F4C662429F69800B20258 /* StaticHeaderPlugin.swift */; };
+		112F4C692429F6A500B20258 /* NetworkDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112F4C682429F6A500B20258 /* NetworkDefaults.swift */; };
+		112F4C6B2429F6B300B20258 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112F4C6A2429F6B300B20258 /* NetworkError.swift */; };
 		11EF25962428A9F3009F4D02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EF25952428A9F3009F4D02 /* AppDelegate.swift */; };
 		11EF259F2428A9F3009F4D02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11EF259E2428A9F3009F4D02 /* Assets.xcassets */; };
 		11EF25A22428A9F3009F4D02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11EF25A02428A9F3009F4D02 /* LaunchScreen.storyboard */; };
@@ -35,6 +39,10 @@
 /* Begin PBXFileReference section */
 		112F4C5E2429F1A000B20258 /* KeyValuePersistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyValuePersistence.swift; sourceTree = "<group>"; };
 		112F4C602429F1AE00B20258 /* PersistanceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistanceManager.swift; sourceTree = "<group>"; };
+		112F4C642429F68900B20258 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		112F4C662429F69800B20258 /* StaticHeaderPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticHeaderPlugin.swift; sourceTree = "<group>"; };
+		112F4C682429F6A500B20258 /* NetworkDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDefaults.swift; sourceTree = "<group>"; };
+		112F4C6A2429F6B300B20258 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		11EF25922428A9F3009F4D02 /* Channels.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Channels.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11EF25952428A9F3009F4D02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11EF259E2428A9F3009F4D02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -94,6 +102,25 @@
 			path = "Persistence Manager";
 			sourceTree = "<group>";
 		};
+		112F4C622429F60B00B20258 /* Network Services */ = {
+			isa = PBXGroup;
+			children = (
+				112F4C632429F61B00B20258 /* Network Defaults */,
+			);
+			path = "Network Services";
+			sourceTree = "<group>";
+		};
+		112F4C632429F61B00B20258 /* Network Defaults */ = {
+			isa = PBXGroup;
+			children = (
+				112F4C642429F68900B20258 /* NetworkManager.swift */,
+				112F4C662429F69800B20258 /* StaticHeaderPlugin.swift */,
+				112F4C682429F6A500B20258 /* NetworkDefaults.swift */,
+				112F4C6A2429F6B300B20258 /* NetworkError.swift */,
+			);
+			path = "Network Defaults";
+			sourceTree = "<group>";
+		};
 		11EF25892428A9F3009F4D02 = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +142,7 @@
 		11EF25942428A9F3009F4D02 /* Channels */ = {
 			isa = PBXGroup;
 			children = (
+				112F4C622429F60B00B20258 /* Network Services */,
 				11EF25B82428AE37009F4D02 /* Storyboards */,
 				11EF25B52428ABD7009F4D02 /* AppDelegate */,
 				112F4C5C2429F16E00B20258 /* Service */,
@@ -276,6 +304,7 @@
 				11EF258F2428A9F3009F4D02 /* Frameworks */,
 				11EF25902428A9F3009F4D02 /* Resources */,
 				11EF25E42428FFEC009F4D02 /* SwiftGem */,
+				087C93C0362B82B71CCE5476 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -337,6 +366,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		087C93C0362B82B71CCE5476 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Channels/Pods-Channels-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Channels/Pods-Channels-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Channels/Pods-Channels-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		11EF25E42428FFEC009F4D02 /* SwiftGem */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -385,6 +431,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				11EF25962428A9F3009F4D02 /* AppDelegate.swift in Sources */,
+				112F4C672429F69800B20258 /* StaticHeaderPlugin.swift in Sources */,
 				11EF25D52428B9EF009F4D02 /* Environment.swift in Sources */,
 				11EF25CB2428AFBB009F4D02 /* BaseViewController.swift in Sources */,
 				11EF25CC2428AFBB009F4D02 /* BaseView.swift in Sources */,
@@ -392,11 +439,14 @@
 				11EF25C52428AE99009F4D02 /* HomeInteractor.swift in Sources */,
 				11EF25E22428FEBD009F4D02 /* Localized+Runtime.swift in Sources */,
 				11EF25CD2428AFBB009F4D02 /* BaseProtocol.swift in Sources */,
+				112F4C6B2429F6B300B20258 /* NetworkError.swift in Sources */,
 				11EF25C32428AE99009F4D02 /* HomeViewController.swift in Sources */,
 				112F4C5F2429F1A000B20258 /* KeyValuePersistence.swift in Sources */,
+				112F4C652429F68900B20258 /* NetworkManager.swift in Sources */,
 				11EF25C42428AE99009F4D02 /* HomeProtocols.swift in Sources */,
 				11EF25B42428ABCE009F4D02 /* Container.swift in Sources */,
 				11EF25C12428AE99009F4D02 /* HomePresenter.swift in Sources */,
+				112F4C692429F6A500B20258 /* NetworkDefaults.swift in Sources */,
 				11EF25E12428FEBD009F4D02 /* Localized.swift in Sources */,
 				11EF25B72428ABF7009F4D02 /* AppDelegate+Extention.swift in Sources */,
 				112F4C612429F1AE00B20258 /* PersistanceManager.swift in Sources */,
