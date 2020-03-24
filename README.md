@@ -7,11 +7,10 @@ This Is A Demo For An App Structure.
  * Swift 5.0+
  
  ## Structure
- * Viper Architecture with its Base Modules.
- * Persistance Manager For Deleaing with userDefaults.
+ * Viper Architecture with it's Base Modules.
+ * Persistance Manager For Dealing with userDefaults.
  * Swiftgen For Managing Resources (Strings, Images).
  * Using Xconfig Files and Schemes For Managing Environment.
- * Viper Architecture with its Base Modules.
  * A Container Class For Creating VCS and Managing App Flow.
  * Using Xibs, No Stoaryboards.
 
