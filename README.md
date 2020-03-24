@@ -1,5 +1,5 @@
 # Channels
-This Is A Demo For App Structure Using Viper including Environment Configuration
+This Is A Demo For An App Structure.
 
 ## Requirements
  * iOS 10.0+
