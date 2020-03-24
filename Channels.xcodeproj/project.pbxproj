@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		112F4C5F2429F1A000B20258 /* KeyValuePersistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112F4C5E2429F1A000B20258 /* KeyValuePersistence.swift */; };
+		112F4C612429F1AE00B20258 /* PersistanceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112F4C602429F1AE00B20258 /* PersistanceManager.swift */; };
 		11EF25962428A9F3009F4D02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EF25952428A9F3009F4D02 /* AppDelegate.swift */; };
 		11EF259F2428A9F3009F4D02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11EF259E2428A9F3009F4D02 /* Assets.xcassets */; };
 		11EF25A22428A9F3009F4D02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11EF25A02428A9F3009F4D02 /* LaunchScreen.storyboard */; };
@@ -31,6 +33,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		112F4C5E2429F1A000B20258 /* KeyValuePersistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyValuePersistence.swift; sourceTree = "<group>"; };
+		112F4C602429F1AE00B20258 /* PersistanceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistanceManager.swift; sourceTree = "<group>"; };
 		11EF25922428A9F3009F4D02 /* Channels.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Channels.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11EF25952428A9F3009F4D02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11EF259E2428A9F3009F4D02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -73,6 +77,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		112F4C5C2429F16E00B20258 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				112F4C5D2429F18600B20258 /* Persistence Manager */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		112F4C5D2429F18600B20258 /* Persistence Manager */ = {
+			isa = PBXGroup;
+			children = (
+				112F4C5E2429F1A000B20258 /* KeyValuePersistence.swift */,
+				112F4C602429F1AE00B20258 /* PersistanceManager.swift */,
+			);
+			path = "Persistence Manager";
+			sourceTree = "<group>";
+		};
 		11EF25892428A9F3009F4D02 = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +117,7 @@
 			children = (
 				11EF25B82428AE37009F4D02 /* Storyboards */,
 				11EF25B52428ABD7009F4D02 /* AppDelegate */,
+				112F4C5C2429F16E00B20258 /* Service */,
 				11EF25DC2428F89B009F4D02 /* Extension */,
 				11EF25DB2428F87F009F4D02 /* Utilities */,
 				11EF25CF2428B4D3009F4D02 /* Resources */,
@@ -371,11 +393,13 @@
 				11EF25E22428FEBD009F4D02 /* Localized+Runtime.swift in Sources */,
 				11EF25CD2428AFBB009F4D02 /* BaseProtocol.swift in Sources */,
 				11EF25C32428AE99009F4D02 /* HomeViewController.swift in Sources */,
+				112F4C5F2429F1A000B20258 /* KeyValuePersistence.swift in Sources */,
 				11EF25C42428AE99009F4D02 /* HomeProtocols.swift in Sources */,
 				11EF25B42428ABCE009F4D02 /* Container.swift in Sources */,
 				11EF25C12428AE99009F4D02 /* HomePresenter.swift in Sources */,
 				11EF25E12428FEBD009F4D02 /* Localized.swift in Sources */,
 				11EF25B72428ABF7009F4D02 /* AppDelegate+Extention.swift in Sources */,
+				112F4C612429F1AE00B20258 /* PersistanceManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
