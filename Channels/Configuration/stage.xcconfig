@@ -1,0 +1,10 @@
+//
+//  stage.xcconfig
+//  Channels
+//
+//  Created by Ahmed Samir on 3/23/20.
+//  Copyright © 2020 Ibtikar. All rights reserved.
+//
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+BASE_URL = www.google.com
