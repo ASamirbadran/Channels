@@ -13,6 +13,12 @@
 		112F4C672429F69800B20258 /* StaticHeaderPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112F4C662429F69800B20258 /* StaticHeaderPlugin.swift */; };
 		112F4C692429F6A500B20258 /* NetworkDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112F4C682429F6A500B20258 /* NetworkDefaults.swift */; };
 		112F4C6B2429F6B300B20258 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112F4C6A2429F6B300B20258 /* NetworkError.swift */; };
+		11EDA44B2431E989002AF19D /* SplashPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EDA4452431E989002AF19D /* SplashPresenter.swift */; };
+		11EDA44C2431E989002AF19D /* SplashRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EDA4462431E989002AF19D /* SplashRouter.swift */; };
+		11EDA44D2431E989002AF19D /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EDA4472431E989002AF19D /* SplashViewController.swift */; };
+		11EDA44E2431E989002AF19D /* SplashProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EDA4482431E989002AF19D /* SplashProtocols.swift */; };
+		11EDA44F2431E989002AF19D /* SplashInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EDA4492431E989002AF19D /* SplashInteractor.swift */; };
+		11EDA4502431E989002AF19D /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11EDA44A2431E989002AF19D /* SplashViewController.xib */; };
 		11EF25962428A9F3009F4D02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EF25952428A9F3009F4D02 /* AppDelegate.swift */; };
 		11EF259F2428A9F3009F4D02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11EF259E2428A9F3009F4D02 /* Assets.xcassets */; };
 		11EF25A22428A9F3009F4D02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11EF25A02428A9F3009F4D02 /* LaunchScreen.storyboard */; };
@@ -43,6 +49,12 @@
 		112F4C662429F69800B20258 /* StaticHeaderPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticHeaderPlugin.swift; sourceTree = "<group>"; };
 		112F4C682429F6A500B20258 /* NetworkDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDefaults.swift; sourceTree = "<group>"; };
 		112F4C6A2429F6B300B20258 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		11EDA4452431E989002AF19D /* SplashPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashPresenter.swift; sourceTree = "<group>"; };
+		11EDA4462431E989002AF19D /* SplashRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashRouter.swift; sourceTree = "<group>"; };
+		11EDA4472431E989002AF19D /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		11EDA4482431E989002AF19D /* SplashProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashProtocols.swift; sourceTree = "<group>"; };
+		11EDA4492431E989002AF19D /* SplashInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashInteractor.swift; sourceTree = "<group>"; };
+		11EDA44A2431E989002AF19D /* SplashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
 		11EF25922428A9F3009F4D02 /* Channels.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Channels.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11EF25952428A9F3009F4D02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11EF259E2428A9F3009F4D02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -121,6 +133,19 @@
 			path = "Network Defaults";
 			sourceTree = "<group>";
 		};
+		11EDA4422431E94C002AF19D /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				11EDA4452431E989002AF19D /* SplashPresenter.swift */,
+				11EDA4462431E989002AF19D /* SplashRouter.swift */,
+				11EDA4472431E989002AF19D /* SplashViewController.swift */,
+				11EDA4482431E989002AF19D /* SplashProtocols.swift */,
+				11EDA4492431E989002AF19D /* SplashInteractor.swift */,
+				11EDA44A2431E989002AF19D /* SplashViewController.xib */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
 		11EF25892428A9F3009F4D02 = {
 			isa = PBXGroup;
 			children = (
@@ -185,6 +210,7 @@
 		11EF25B92428AE5C009F4D02 /* Scence */ = {
 			isa = PBXGroup;
 			children = (
+				11EDA4422431E94C002AF19D /* Splash */,
 				11EF25BA2428AE6A009F4D02 /* Home */,
 			);
 			path = Scence;
@@ -357,6 +383,7 @@
 				11EF25A22428A9F3009F4D02 /* LaunchScreen.storyboard in Resources */,
 				11EF25EF242901F7009F4D02 /* Localizable.strings in Resources */,
 				11EF25D32428B9EF009F4D02 /* stage.xcconfig in Resources */,
+				11EDA4502431E989002AF19D /* SplashViewController.xib in Resources */,
 				11EF259F2428A9F3009F4D02 /* Assets.xcassets in Resources */,
 				11EF25C62428AE99009F4D02 /* HomeViewController.xib in Resources */,
 				11EF25D42428B9EF009F4D02 /* live.xcconfig in Resources */,
@@ -430,14 +457,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11EDA44E2431E989002AF19D /* SplashProtocols.swift in Sources */,
 				11EF25962428A9F3009F4D02 /* AppDelegate.swift in Sources */,
+				11EDA44F2431E989002AF19D /* SplashInteractor.swift in Sources */,
 				112F4C672429F69800B20258 /* StaticHeaderPlugin.swift in Sources */,
 				11EF25D52428B9EF009F4D02 /* Environment.swift in Sources */,
 				11EF25CB2428AFBB009F4D02 /* BaseViewController.swift in Sources */,
 				11EF25CC2428AFBB009F4D02 /* BaseView.swift in Sources */,
+				11EDA44D2431E989002AF19D /* SplashViewController.swift in Sources */,
 				11EF25C22428AE99009F4D02 /* HomeRouter.swift in Sources */,
 				11EF25C52428AE99009F4D02 /* HomeInteractor.swift in Sources */,
 				11EF25E22428FEBD009F4D02 /* Localized+Runtime.swift in Sources */,
+				11EDA44B2431E989002AF19D /* SplashPresenter.swift in Sources */,
+				11EDA44C2431E989002AF19D /* SplashRouter.swift in Sources */,
 				11EF25CD2428AFBB009F4D02 /* BaseProtocol.swift in Sources */,
 				112F4C6B2429F6B300B20258 /* NetworkError.swift in Sources */,
 				11EF25C32428AE99009F4D02 /* HomeViewController.swift in Sources */,

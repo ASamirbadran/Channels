@@ -19,5 +19,10 @@ extension AppDelegate {
         self.window?.rootViewController = Container.getHomeScreen()
         self.window?.makeKeyAndVisible()
     }
-
+    
+    func openSplashScreen() {
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        self.window?.rootViewController = Container.getSplashScreen()
+        self.window?.makeKeyAndVisible()
+    }
 }

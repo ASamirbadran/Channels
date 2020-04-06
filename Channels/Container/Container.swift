@@ -22,4 +22,11 @@ class Container {
         }
         return homeVC
     }
+    
+    class func getSplashScreen() -> SplashViewController {
+        guard let splashVC = SplashRouter.createModule() as? SplashViewController else {
+            return SplashViewController()
+        }
+        return splashVC
+    }
 }
